@@ -66,6 +66,7 @@ img {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 .container {
@@ -132,10 +133,22 @@ nav ul li:not(:last-child) {
     padding: 0 50px;
 }
 
+.container_hero .hero_photo img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 .hero_content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.hero_content img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .hero_title {
@@ -161,3 +174,150 @@ nav ul li:not(:last-child) {
     margin-right: 100px;
 }
 
+/*------------------------- SINGLES SECTION -------------------------*/
+
+.singles {
+    margin-top: 120px;
+}
+
+.betty_section {
+    margin-bottom: 85px;
+}
+
+.betty_section,
+.snova_section {
+    display: flex;
+    align-items: center;
+}
+
+.music_links{
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 25px;
+    width: 30px;
+}
+
+.music_links a:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.betty_section img,
+.snova_section img {
+    width: 300px;
+    margin-right: 55px;
+}
+
+.section_content .music_title {
+    color: #40282A;
+    font-weight: 800;
+    font-size: 40px;
+    margin: 0;
+}
+
+.section_content .music_artist {
+    color: #40282A;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 5px;
+}
+
+.audio_player {
+    height: 100px;
+}
+
+.lyrics_button div{
+    background-color: #40282A;
+    padding: 13px 51px;
+    border-radius: 5px;
+}
+
+.singles .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.singles .heading {
+    font-size: 110px;
+    font-weight: 900;
+    writing-mode: vertical-rl;
+    color: transparent;
+    margin: 0;
+    -webkit-text-stroke: 2px #40282A;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/*------------------------- TOUR SECTION -------------------------*/
+
+.tour {
+    margin-top: 120px;
+    background-image: url('../img/tour_img.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    max-height: 650px;
+}
+
+.tour .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tour_img .heading {
+    color: #fff;
+    font-size: 128px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.tour_places {
+    width: 45%;
+}
+
+.tour_item {
+    color: #40282A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tour_item:not(:last-child) {
+    margin-bottom: 10%;
+}
+
+.tour_item .date{
+    display: inline-flex;
+    align-items: center;
+}
+
+.tour_item .date .day{
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.tour_item .date .wrap {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 3px;
+}
+
+.tour_item .date .wrap span {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.tour_item .city {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tour_item a div {
+    background-color: #40282A;
+    padding: 13px 51px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
