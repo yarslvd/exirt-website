@@ -494,3 +494,267 @@ nav ul li:not(:last-child) {
     color: #9b9b9b8e;
     padding-bottom: 30px;
 }
+
+
+
+/*------------------------- ADAPTIVITY -------------------------*/
+
+@media only screen and (max-width: 1200px) {
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul li a{
+        font-size: 14px;
+    }
+
+    nav ul li:not(:last-child) {
+        margin-right: 80px;
+    }
+
+
+    .hero_title {
+        font-size: 25px;
+    }
+    
+    .hero_subtitle {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    
+    .hero_content a:not(:last-child){
+        margin-right: 10px
+    }
+
+    .hero_content a img {
+        width: 30px;
+    }
+    
+
+
+    .betty_section img,
+    .snova_section img {
+        width: 200px;
+        margin-right: 55px;
+    }
+
+    .section_content .music_title {
+        font-size: 30px;
+    }
+    
+    .section_content .music_artist {
+        font-size: 20px;
+        line-height: 5px;
+    }
+
+    .lyrics_button div{
+        background-color: #40282A;
+        padding: 10px 40px;
+        border-radius: 5px;
+    }
+
+    .singles .heading {
+        font-size: 90px;
+    }
+
+
+    .tour_img .heading {
+        font-size: 80px;
+    }
+
+    .tour_item .date .day{
+        font-size: 30px;
+    }
+    
+    .tour_item .date .wrap span {
+        font-size: 12px;
+    }
+    
+    .tour_item .city {
+        font-size: 18px;
+    }
+    
+    .tour_item a div {
+        padding: 10px 35px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+
+    .text_container {
+        max-height: 500px;
+    }
+
+    .about .heading {
+        font-size: 26px;
+        font-weight: 800;
+        color: #40282A;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    
+    .about .text_container p {
+        font-size: 14px;
+        line-height: 24px;
+        padding-bottom: 20px;
+        color: #40282A;
+        width: 45%;
+    }
+
+
+    .contacts {
+        background-size: 100%;
+    }
+
+    .contacts .heading {
+        font-size: 55px;
+        padding-top: 30px;
+    }
+    
+    .contacts .sub-heading {
+        font-size: 35px;
+    }
+    
+    .contacts .email a{
+        margin-top: 40px;
+    }
+    
+    .contacts .email .email_text {
+        font-size: 16px;
+    }
+    
+    .contacts .tel a{
+        margin-top: 10px;
+    }
+
+    .tel img {
+        width: 25px;
+    }
+    
+    .contacts .tel .tel_num {
+        font-size: 16px;
+    }
+
+    .email img {
+        width: 25px;
+    }
+    
+    .contacts .socials {
+        padding-bottom: 100px;
+    }
+
+    .contacts .socials a img{
+        width: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 910px) {
+    .hero_title {
+        font-size: 20px;
+    }
+    
+    .hero_subtitle {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    
+    .hero_content .text {
+        margin-right: 30px;
+    }
+
+    .footer_top {
+        margin: auto auto;
+    }
+    .footer .heading {
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    
+    .footer .content {
+        font-weight: 300;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #CECECE;
+        margin-top: 10px;
+    }
+    
+    .footer .content ul li:not(:last-child),
+    .footer .content li:not(:last-child) {
+        margin-bottom: 4px;
+    }
+    
+    .footer_left {
+        max-width: 70%;
+        margin-bottom: 50px;
+    }
+    
+    .footer_right .socials img{
+        width: 20px;
+    }
+    
+    .footer_col:first-child {
+        margin-right: 70px;
+        padding-right: 70px;
+    }
+    
+    .footer_top {
+        padding-bottom: 100px;
+        border-bottom: 1px solid #9b9b9b8e;
+    }
+    
+    .footer_bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        text-transform: uppercase;
+        color: #9b9b9b8e;
+        padding-bottom: 30px;
+    }
+
+    .footer_bottom small {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .container_hero .hero_photo img {
+        display: none;
+    }
+    .container_hero {
+        display: block;
+        padding: 0 50px 50px;
+    }
+    .hero_content {
+        justify-content: space-around;
+    }
+    .hero_content img {
+        width: 200px;
+    }
+
+
+    .betty_section {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+    .betty_section > img {
+        width: 300px;
+        display: block;
+        margin: 0;
+    }
+    .container_heading {
+        display: none;
+    }
+    .music_links {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .music_links img {
+        width: 35px;
+    }
+}
