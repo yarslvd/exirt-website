@@ -69,6 +69,10 @@ a {
     color: #fff;
 }
 
+p {
+    margin: 0;
+}
+
 .container {
     max-width: 1430px;
     padding: 0 15px;
@@ -320,4 +324,173 @@ nav ul li:not(:last-child) {
     padding: 13px 51px;
     border-radius: 5px;
     text-transform: uppercase;
+}
+
+/*------------------------- ABOUT SECTION -------------------------*/
+
+.about {
+    margin-top: 120px;
+    background-image: url('../img/about_img.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    max-height: 500px;
+    background-position: right;
+}
+
+.text_container {
+    max-height: 500px;
+}
+
+.about .heading {
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #40282A;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.about .text_container p {
+    width: 40%;
+    font-size: 18px;
+    line-height: 35px;
+    padding-bottom: 15%;
+    color: #40282A;
+}
+
+/*------------------------- CONTACT ME SECTION -------------------------*/
+
+.contacts {
+    margin-top: 120px;
+    background-image: url('../img/contactme_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contacts .heading {
+    font-size: 96px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 60px;
+}
+
+.contacts .sub-heading {
+    font-size: 64px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.contacts .email a{
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.contacts .email .email_text {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.contacts .tel a{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contacts .tel .tel_num {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.contacts .socials {
+    display: flex;
+    margin-top: 10px;
+    padding-bottom: 200px;
+}
+
+.contacts .socials a:not(:last-child) {
+    margin-right: 30px;
+}
+
+/*------------------------- FOOTER -------------------------*/
+
+.footer {
+    background-image: url('../img/footer_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin-top: 120px;
+    padding-top: 125px;
+}
+
+.footer .heading {
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.footer .content {
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #CECECE;
+    margin-top: 10px;
+}
+
+.footer .content ul li:not(:last-child),
+.footer .content li:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer_left {
+    max-width: 420px;
+}
+
+.footer_right {
+    display: flex;
+}
+
+.footer_right .socials {
+    margin-top: 10px;
+    display: flex;
+}
+
+.footer_right .socials img{
+    width: 25px;
+}
+
+.footer_right .socials a:not(:last-child){
+    margin-right: 30px
+}
+
+.footer_col:first-child {
+    padding-right: 30px;
+    border-right: 1px solid #9b9b9b8e;
+    margin-right: 30px;
+}
+
+.footer_top {
+    padding-bottom: 100px;
+    border-bottom: 1px solid #9b9b9b8e;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    text-transform: uppercase;
+    color: #9b9b9b8e;
+    padding-bottom: 30px;
 }
