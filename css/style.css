@@ -736,25 +736,31 @@ nav ul li:not(:last-child) {
         width: 200px;
     }
 
-
-    .betty_section {
-        display: block;
-        text-align: center;
-        margin-right: 0;
+    .singles .container {
+        justify-content: center;
     }
-    .betty_section > img {
+    .betty_section,
+    .snova_section {
+        display: flex;
+        flex-direction: column;
+    }
+    .betty_section img,
+    .snova_section img {
         width: 300px;
-        display: block;
         margin: 0;
     }
-    .container_heading {
-        display: none;
-    }
-    .music_links {
+    .music_links{
+        display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        margin-right: 0;
+        width: 90px;
     }
-    .music_links img {
-        width: 35px;
+    
+    .music_links a:not(:last-child) {
+        margin-bottom: 0px;
+    }
+    
+    .singles .heading {
+        display: none;
     }
 }
