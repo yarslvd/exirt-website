@@ -342,7 +342,7 @@ nav ul li:not(:last-child) {
 }
 
 .about .heading {
-    font-size: 1.8em;
+    font-size: 26px;
     font-weight: 800;
     color: #40282A;
     text-transform: uppercase;
@@ -357,6 +357,9 @@ nav ul li:not(:last-child) {
     color: #40282A;
 }
 
+.about .photo_img {
+    display: none;
+}
 /*------------------------- CONTACT ME SECTION -------------------------*/
 
 .contacts {
@@ -735,10 +738,10 @@ nav ul li:not(:last-child) {
     .hero_content img {
         width: 200px;
     }
-
     .singles .container {
         justify-content: center;
     }
+
     .betty_section,
     .snova_section {
         display: flex;
@@ -746,21 +749,94 @@ nav ul li:not(:last-child) {
     }
     .betty_section img,
     .snova_section img {
-        width: 300px;
+        width: 250px;
         margin: 0;
     }
+
     .music_links{
-        display: flex;
         flex-direction: row;
         margin-right: 0;
-        width: 90px;
+        margin-bottom: 10px;
+        width: 120px;
     }
     
     .music_links a:not(:last-child) {
         margin-bottom: 0px;
+        margin-right: 20px;
+    }
+    .section_content {
+        text-align: center;
     }
     
     .singles .heading {
         display: none;
+    }
+
+    .tour {
+        background-image: none;
+    }
+    .tour .container {
+        display: block;
+    }
+    .tour_img .heading {
+        color: #40282A;
+        font-size: 35px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .tour_places {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about {
+        margin-top: 120px;
+        background-image: none;
+    }
+    .about .heading {
+        font-size: 35px;
+        font-weight: 900;
+        color: #40282A;
+    }
+    .about .text_container p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .about .photo_img {
+        display: block;
+    }
+
+    .contacts {
+        margin-top: 500px;
+        background-image: none;
+        background-color: #27191a;
+    }
+    .contacts .heading {
+        font-size: 35px;
+        font-weight: 900;
+    }
+    .contacts .sub-heading {
+        font-size: 25px;
+    }
+
+    .footer_right {
+        display: block;
+    }
+    .footer_top {
+        justify-content: center;
+        text-align: center;
+    }
+    .footer_col:first-child {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 50px;
+        border: none;
+        
+    }
+    .footer_right .socials {
+        justify-content: center;
     }
 }
