@@ -203,10 +203,20 @@ nav ul li:not(:last-child) {
     -ms-user-select: none;
 }
 
+.hero_photo {
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+
 .hero_content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transform: translate(50%, 0);
+    opacity: 0;
+    transition: all 1s ease 0s;
 }
 
 .hero_content img {
@@ -311,6 +321,11 @@ nav ul li:not(:last-child) {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+}
+
+._active {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 /*------------------------- TOUR SECTION -------------------------*/
