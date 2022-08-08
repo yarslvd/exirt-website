@@ -275,8 +275,8 @@ nav ul li:not(:last-child) {
     margin-bottom: 25px;
 }
 
-.betty_section img,
-.snova_section img {
+.betty_section > img,
+.snova_section > img {
     width: 300px;
     margin-right: 55px;
 }
@@ -295,11 +295,8 @@ nav ul li:not(:last-child) {
     line-height: 5px;
 }
 
-.audio_player {
-    height: 100px;
-}
-
 .lyrics_button div{
+    display: inline;
     background-color: #40282A;
     padding: 13px 51px;
     border-radius: 5px;
@@ -327,6 +324,37 @@ nav ul li:not(:last-child) {
     transform: translateX(0);
     opacity: 1;
 }
+
+.audio_player {
+    margin: 40px 0;
+    width: 500px;
+}
+
+.music-container {
+    display: flex;
+    align-items: center;
+}
+
+.music-container div:not(:last-child) {
+    margin-right: 20px;
+}
+
+.navigation button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.progress-container {
+    background-color: #BEBEBE;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+}
+
 
 /*------------------------- TOUR SECTION -------------------------*/
 

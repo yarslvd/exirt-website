@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "img/exirt_header.png" type = "image/x-icon">
     <title>Exirt</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -59,7 +60,25 @@
                             <h3 class="music_title">Bet,t</h3>
                             <span class="music_artist">exirt</span>
                             <div class="audio_player">
-    
+
+                                <div class="music-container">
+                                    <div class="navigation">
+                                        <button id="play" onclick="" class="play_btn">
+                                            <img src="./img/play.svg" alt="Play" width="50px" class="play_btn_img play">
+                                        </button>
+                                    </div>
+                                    <div class="progress-container">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="timer">
+                                        <span>0:34</span>
+                                    </div>
+                                    <div class="volume">
+                                        <img src="./img/volume_on.svg" alt="Volume">
+                                    </div>
+                                </div>
+                                <audio src="./audio/Harry Styles - Love Of My Life .mp3"></audio>
+
                             </div>
                             <a href="https://genius.com/Exirt-bett-lyrics" class="lyrics_button" target="_blank"><div>Lyrics</div></a>
                         </div>
@@ -75,7 +94,7 @@
                             <h3 class="music_title">Снова</h3>
                             <span class="music_artist">exirt</span>
                             <div class="audio_player">
-    
+                                
                             </div>
                             <a href="https://genius.com/Exirt--lyrics" class="lyrics_button" target="_blank"><div>Lyrics</div></a>
                         </div>
@@ -244,5 +263,6 @@
         </footer>
     </main>
     <script src="./js/script.js"></script>
+    <script src="./js/audioplayer.js"></script>
 </body>
 </html>
