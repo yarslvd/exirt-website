@@ -440,7 +440,7 @@ nav ul li:not(:last-child) {
 
 .tour_item a div {
     background-color: #40282A;
-    padding: 13px 51px;
+    padding: 12px 51px;
     border-radius: 5px;
     text-transform: uppercase;
 }
@@ -865,7 +865,7 @@ nav ul li:not(:last-child) {
     .nav--visible {
         transform: none;
     }
-    nav ul{
+    nav ul {
         flex-direction: column;
         align-items: center;
         padding: 20%;
@@ -911,6 +911,9 @@ nav ul li:not(:last-child) {
         width: 250px;
         margin: 0;
     }
+    .audio_player {
+        width: 360px;
+    }
 
     .music_links{
         flex-direction: row;
@@ -946,8 +949,11 @@ nav ul li:not(:last-child) {
         text-align: center;
     }
     .tour_places {
-        width: 80%;
+        width: 95%;
         margin: 0 auto;
+    }
+    .tour_item a div {
+        padding: 8px 30px;
     }
 
     .about {
@@ -997,5 +1003,13 @@ nav ul li:not(:last-child) {
     }
     .footer_right .socials {
         justify-content: center;
+    }
+    .footer_bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_bottom small{
+        font-size: 12px;
+        padding-top: 10px;
     }
 }
