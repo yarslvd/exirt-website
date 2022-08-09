@@ -327,7 +327,7 @@ nav ul li:not(:last-child) {
 
 .audio_player {
     margin: 40px 0;
-    width: 500px;
+    width: 600px;
 }
 
 .music-container {
@@ -339,7 +339,11 @@ nav ul li:not(:last-child) {
     margin-right: 20px;
 }
 
-.navigation button{
+.timer-container {
+    width: 50px;
+}
+
+.navigation button {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -347,12 +351,24 @@ nav ul li:not(:last-child) {
     outline: none;
 }
 
+.navigation button i {
+    color:#27191a;
+    font-size: 24px;
+}
+
 .progress-container {
     background-color: #BEBEBE;
     cursor: pointer;
     margin: 10px 0;
-    height: 4px;
+    height: 5px;
     width: 100%;
+}
+
+.progress {
+    background-color: #40282A;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
 }
 
 
@@ -661,8 +677,12 @@ nav ul li:not(:last-child) {
         border-radius: 5px;
     }
 
+    .audio_player {
+        width: 450px;
+    }
+
     .singles .heading {
-        font-size: 90px;
+        font-size: 60px;
     }
 
 
