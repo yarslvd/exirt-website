@@ -14,7 +14,7 @@ function playSong() {
     playBtn.querySelector('i.fas').classList.add('fa-pause');
     playBtn.querySelector('i.fas').classList.remove('fa-play');
 
-    audio.volume = 0.2;
+    audio.volume = 0.4;
     audio.play();
 }
 
@@ -28,7 +28,7 @@ function pauseSong() {
 
 function updateProgress(e) {
     const {duration, currentTime} = e.srcElement;
-    const progressPercent = (currentTime / duration) * 100;
+    const progressPercent = (currentTime / duration) * 100 / 4;
     progress.style.width = `${progressPercent}%`;
 }
 
@@ -37,7 +37,7 @@ function setProgress(e) {
     const clickX = e.offsetX;
     const duration = audio.duration;
 
-    audio.currentTime = (clickX / width) * duration;
+    audio.currentTime = (clickX / width) * duration * 4;
     progress.style.width = `${audio.currentTime}`
 }
 
@@ -84,7 +84,30 @@ playBtn.addEventListener('click', () => {
     }
 })
 
+audio.addEventListener('ended', () => {
+    let modal = document.querySelector(".modal");
+    let close = document.querySelector('.close-modal');
+    console.log(modal);
+    modal.style.visibility = 'visible';
+    let span = document.getElementsByClassName("close")[0];
+    const body = document.querySelector("body");
+
+    modal.style.display = "flex";
+    body.style.overflow = "hidden";
+
+    close.onclick = function() {
+        modal.style.display = "none";
+        body.style.overflow = "auto";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+          body.style.overflow = "auto";
+        }
+      }
+});
+
+
 audio.addEventListener('timeupdate', updateProgress);
 audio.addEventListener('timeupdate', getTime);
-audio.addEventListener('ended', () => {console.log('ended!')});
 progressContainer.addEventListener('click', setProgress);

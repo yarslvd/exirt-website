@@ -4,6 +4,7 @@ const body = document.body;
 const navItems = nav?.querySelectorAll('a');
 const anchors = document.querySelectorAll('a[href*="#"]');
 const itemsToAnimate = document.querySelectorAll('._animate');
+const exirtLogo = document.querySelector('.logo');
 
 if(itemsToAnimate.length > 0) {
     window.addEventListener('scroll', animate());
@@ -53,6 +54,10 @@ navItems.forEach(el => {
         burger?.classList.remove('burger--active');
         nav?.classList.remove('nav--visible')
     });
+});
+
+exirtLogo.addEventListener('click', () => {
+    window.location.reload();
 });
 
 
