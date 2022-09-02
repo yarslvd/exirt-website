@@ -545,7 +545,6 @@ nav ul li:not(:last-child) {
     background: #fff;
     display: flex;
     width: 55%;
-    height: 50%;
     justify-content: space-between;
     gap: 30px;
     border-radius: 15px;
@@ -607,7 +606,8 @@ nav ul li:not(:last-child) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px 0 20px 20px;
+    margin: 0 auto;
+    padding: 50px 20px;
 }
 
 /*------------------------- FOOTER -------------------------*/

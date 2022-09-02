@@ -87,13 +87,12 @@ playBtn.addEventListener('click', () => {
 audio.addEventListener('ended', () => {
     let modal = document.querySelector(".modal");
     let close = document.querySelector('.close-modal');
-    console.log(modal);
     modal.style.visibility = 'visible';
     let span = document.getElementsByClassName("close")[0];
     const body = document.querySelector("body");
 
     modal.style.display = "flex";
-    body.style.overflow = "hidden";
+    body.style.overflow = "none";
 
     close.onclick = function() {
         modal.style.display = "none";
