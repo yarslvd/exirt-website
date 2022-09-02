@@ -92,7 +92,7 @@ audio.addEventListener('ended', () => {
     const body = document.querySelector("body");
 
     modal.style.display = "flex";
-    body.style.overflow = "none";
+    body.style.overflow = "hidden";
 
     close.onclick = function() {
         modal.style.display = "none";
